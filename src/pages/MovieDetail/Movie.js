@@ -221,7 +221,7 @@ const Movie = () => {
               <h2 className="list__title">SIMILAR MOVIES</h2>
               <div className="list__cards">
                 {similarMovieDetail.map((movie) => (
-                  <Card movie={movie} />
+                 movie.backdrop_path!=null && <Card movie={movie} />
                 ))}
               </div>
             </div>
